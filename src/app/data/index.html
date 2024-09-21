@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="text" class="bg-slate-600 text-3xl font-serif justify-center items-center flex ">WelCome Back your home </h1>
+        <button id="btn" class="bg-blue-700 cursor-pointer rounded-full px-9 py-3" type="submit">Click</button>
+    </div>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function(){
+            let conf = confirm("Are you shore")
+            setTimeout(() => {
+                document.getElementById("text").innerHTML = "Loading..."
+            }, 1000);
+
+            setTimeout(() => {
+                document.getElementById("text").innerHTML = "i Can i help you!"
+            }, 5000);
+        })
+
+        
+    </script>
+</body>
+</html>
